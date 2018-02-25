@@ -21,10 +21,14 @@
       </a-entity>
 
 <!--OPENING SCREEN-->
-      <a-entity position="-1.75 2.5 -2"
+      <a-entity id="welcome" position="-1.75 2.5 -2"
           text="anchor: left; width: 10; color: white; value: CLOUD WATCHING">
       </a-entity>
-      <a-sphere></a-sphere>
+      
+      <a-entity visible= "true" class="cloud" id="start1a" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="-0.5 1.6 -2"></a-entity>
+      <a-entity visible= "true" class="cloud" id="start1b" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.5" material="side: double; color: #FBFCFC" position="0 1.7 -2"></a-entity>
+      <a-entity visible= "true" class="cloud" id="start1c" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="0.5 1.6 -2"></a-entity>
+      
       <a-entity position="-0.6 1 -2"
           text="anchor: left; width: 3; color: white; value: click cloud to begin"></a-entity>
       
