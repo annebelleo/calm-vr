@@ -23,20 +23,20 @@
       <a-plane color="green" height="50" width="100" rotation="-90 0 0"></a-plane>
 
 <!--OPENING SCREEN-->
-      <a-entity id="welcome" position="-1.75 6 -2"
+      <a-entity id="welcome" position="-1.75 2.5 -2"
           text="anchor: left; width: 10; color: white; value: CLOUD WATCHING">
       </a-entity>
       
-      <a-entity visible= "true" class="cloud" id="start1a" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="-0.5 4 -2"></a-entity>
-      <a-entity visible= "true" class="cloud" id="start1b" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.5" material="side: double; color: #FBFCFC" position="0 4.1 -2"></a-entity>
-      <a-entity visible= "true" class="cloud" id="start1c" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="0.5 4 -2"></a-entity>
+      <a-entity visible= "true" class="cloud" id="start1a" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="-0.5 1.6 -2"></a-entity>
+      <a-entity visible= "true" class="cloud" id="start1b" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.5" material="side: double; color: #FBFCFC" position="0 1.7 -2"></a-entity>
+      <a-entity visible= "true" class="cloud" id="start1c" onclick="appendCloud()" geometry="primitive: circle; buffer: false; skipCache: true; radius: 0.35" material="side: double; color: #F8F9F9" position="0.5 1.6 -2"></a-entity>
       
-      <a-entity position="-0.6 3 -2"
+      <a-entity id="animation" position="-0.6 0.9 -2"
           text="anchor: left; width: 3; color: white; value: click cloud to begin"></a-entity>
           
       
       <a-entity>    
-       <a-animation attribute="rotation" to="0 360 0" dur="70000" repeat="indefinite"></a-animation>
+       <a-animation attribute="rotation" to="0 360 0" dur="80000" repeat="indefinite"></a-animation>
           
       <!--CLOUD 1-->
       <a-sphere color="yellow" radius="2" position="-1 10 -12" rotation="0 0 0"></a-sphere>
@@ -91,6 +91,12 @@
       <a-sphere color="white" radius="1.6" position="15 18 23" rotation="0 0 0"></a-sphere>
       <a-sphere color="white" radius="1.6" position="15 16 20" rotation="0 0 0"></a-sphere>
       <a-sphere color="white" radius="1.6" position="15 18 20" rotation="0 0 0"></a-sphere>
+      
+      <a-sphere color="black" radius="1.6" position="1.2 29 10" rotation="0 0 0"></a-sphere>
+      <a-sphere color="black" radius="2" position="2 31 12" rotation="0 0 0"></a-sphere>
+      <a-sphere color="black" radius="2.7" position="4.6 32 11" rotation="0 0 0"></a-sphere>
+      <a-sphere color="black" radius="1.2" position="1.6 28 12" rotation="0 0 0"></a-sphere>
+      <a-sphere color="black" radius="1.4" position="-0.8 29 11.8" rotation="0 0 0"></a-sphere>
       
       </a-entity>
       <a-camera>

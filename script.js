@@ -7,8 +7,17 @@ var colors = ["#ffffff", "#f2f2f2", "#e6e6e6", "#d9d9d9", "#cccccc"]; // white -
 var index;
 
 function appendCloud() {
-
-
+        var rotation = document.getElementById("animation");
+        rotation.setAttribute("visible", false);
+        var introCloud = document.getElementById("welcome");
+        introCloud.setAttribute("visible", false);
+        var intro1 = document.getElementById("start1a"); // collecting elements as a class does not work
+        var intro2 = document.getElementById("start1b");
+        var intro3 = document.getElementById("start1c");
+        intro1.setAttribute("visible", false);
+        intro2.setAttribute("visible", false);
+        intro3.setAttribute("visible", false);
+        
 //     // creating a new sphere
 //     for (var i = 0; i < 10; i++) {
 //         positionX = Math.random() * 20 - 10;
