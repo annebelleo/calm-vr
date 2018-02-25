@@ -17,8 +17,6 @@ function appendCloud() {
         intro1.setAttribute("visible", false);
         intro2.setAttribute("visible", false);
         intro3.setAttribute("visible", false);
-        var clouds = document.getElementsByTagName("a-sphere");
-        clouds.setAttribute("color", colors[index])
         
 //     // creating a new sphere
 //     for (var i = 0; i < 10; i++) {
