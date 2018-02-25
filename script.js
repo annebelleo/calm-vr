@@ -9,9 +9,9 @@ var index;
 function appendCloud() {
     // creating a new sphere
     for (var i = 0; i < 10; i++) {
-        positionX = Math.random() * 7 + 3;
-        positionY = Math.floor(Math.random() * 5);
-        positionZ = Math.random() * (-10 || 10) + -10;
+        positionX = Math.random() * 20 - 10;
+        positionY = Math.random() * 20 - 10;
+        positionZ = Math.random() * -10 + -10;
         index = Math.floor(Math.random() * (colors.length));
         points = `${positionX} ${positionY} ${positionZ}`;
         var newCircle = document.createElement("a-circle");
