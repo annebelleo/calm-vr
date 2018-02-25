@@ -1,2 +1,2 @@
-# music-vr
-AthenaHacks 2018
+# Cloud Watching VR
+The repo name is misleading. AthenaHacks 2018
