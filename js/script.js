@@ -6,6 +6,23 @@ var points;
 var colors = ["#ffffff", "#f2f2f2", "#e6e6e6", "#d9d9d9", "#cccccc"]; // white -> gray
 var index = Math.floor(Math.random() * (colors.length));
 
+function appendHouse() {
+        var houseRoom = document.createElement("a-box");
+        var houseEntity = document.getElementById("house")
+        houseRoom.setAttribute("width", "3")
+        houseRoom.setAttribute("depth", "3")
+        houseRoom.setAttribute("height", "3")
+        houseRoom.setAttribute("color", "#9999ff")
+        houseEntity.setAttribute("position", "-5 0 -5");
+        var houseRoof = document.createElement("a-cone");
+        houseRoof.setAttribute("position", "0 2 0")
+        houseRoof.setAttribute("radius-bottom", "1.5");
+        var box1 = document.getElementById("1")
+        box1.setAttribute("visible", false)
+        houseEntity.appendChild(houseRoom);
+        houseEntity.appendChild(houseRoof);
+}
+
 function appendCloud() {
         var rotation = document.getElementById("animation");
         rotation.setAttribute("visible", false);
@@ -17,6 +34,8 @@ function appendCloud() {
         intro1.setAttribute("visible", false);
         intro2.setAttribute("visible", false);
         intro3.setAttribute("visible", false);
+        var stop = document.getElementById("home");
+        stop.setAttribute("visible", false);
         
 //     // creating a new sphere
 //     for (var i = 0; i < 10; i++) {
