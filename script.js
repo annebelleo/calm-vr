@@ -4,7 +4,7 @@ var positionY;
 var positionZ;
 var points;
 var colors = ["#ffffff", "#f2f2f2", "#e6e6e6", "#d9d9d9", "#cccccc"]; // white -> gray
-var index;
+var index = Math.floor(Math.random() * (colors.length));
 
 function appendCloud() {
         var rotation = document.getElementById("animation");
@@ -17,6 +17,8 @@ function appendCloud() {
         intro1.setAttribute("visible", false);
         intro2.setAttribute("visible", false);
         intro3.setAttribute("visible", false);
+        var clouds = document.getElementsByTagName("a-sphere");
+        clouds.setAttribute("color", colors[index])
         
 //     // creating a new sphere
 //     for (var i = 0; i < 10; i++) {
