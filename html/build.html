@@ -9,7 +9,8 @@
   <a-scene>
     <a-assets>
       <img id="ground" src="../images/sand.jpg">
-    </a-assets>
+      <a-asset-item id="ball-mtl" src="../images/untitled.mtl"></a-asset-item>
+    </a-assets> 
 
     <a-plane src="#ground" height="50" width="75" rotation="-90 0 0"></a-plane>
     <a-entity id="animation" position="1 2 -2" text="width: 3; color: white; value: Click on squares to build."></a-entity>
@@ -18,9 +19,13 @@
     <!-- house -->
       <a-entity id="house"></a-entity>
       <a-box id="1" color="tomato" position="-5 0.5 -5" depth="1" height="1" width="1" position="0 0 0" rotation="90 0 0" onclick="appendHouse()"></a-box>
-      <a-box color="pink" position="-1 0.5 7" depth="1" height="1" width="1" position="0 0 0" rotation="90 0 0" onclick="appendObject()"></a-box>
-      <a-box color="yellow" position="6 0.5 -4" depth="1" height="1" width="1" position="0 0 0" rotation="90 0 0" onclick="appendObject()"></a-box>
+      <a-box color="pink" position="-1 0.5 7" depth="1" height="1" width="1" position="0 0 0" rotation="90 0 0" onclick="appendBall()"></a-box>
+      <a-box color="yellow" position="6 0.5 -4" depth="1" height="1" width="1" position="0 0 0" rotation="90 0 0" onclick="appendBall()"></a-box>
+      
+    <!--HOME BUTTON-->
     
+  <a-sphere link="href: ../index.html; title: GO HOME" position="5 1 -0.5" radius="0.2" rotation="0 -45 0" color="grey"></a-sphere>
+  
     <!--<a-entity id="tomato2" position="-5 0 -5">-->
     <!--  <a-animation attribute="rotation" from="0 0 0" to="90 0 0" begin="click"></a-animation>-->
     <!--  <a-box color="tomato" depth="1" height="1" width="3" position="0 0 0" rotation="0 90 0"></a-box>-->

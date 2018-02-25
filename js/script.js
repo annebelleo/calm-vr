@@ -23,6 +23,12 @@ function appendHouse() {
         houseEntity.appendChild(houseRoof);
 }
 
+function appendBall() {
+        var ball = document.createElement("a-sphere");
+        ball.setAttribute("position", "12 0 -5");
+        document.getElementById("scene").appendChild(ball)
+}
+
 function appendCloud() {
         var rotation = document.getElementById("animation");
         rotation.setAttribute("visible", false);
